@@ -1,0 +1,32 @@
+{
+  "test": {
+    "chips": 740,
+    "lake_IoU": 0.3698,
+    "lake_IoU_std": 0.3612,
+    "mIoU_2class": 0.6713,
+    "F1": 0.6176,
+    "precision": 0.7187,
+    "recall": 0.5414,
+    "boundary_F1": 0.3978
+  },
+  "himalaya": {
+    "chips": 351,
+    "lake_IoU": 0.2653,
+    "lake_IoU_std": 0.3324,
+    "mIoU_2class": 0.6172,
+    "F1": 0.4488,
+    "precision": 0.6532,
+    "recall": 0.3418,
+    "boundary_F1": 0.281
+  },
+  "challenge": {
+    "chips": 1105,
+    "lake_IoU": 0.1137,
+    "lake_IoU_std": 0.2315,
+    "mIoU_2class": 0.5358,
+    "F1": 0.1828,
+    "precision": 0.4757,
+    "recall": 0.1131,
+    "boundary_F1": 0.1305
+  }
+}
