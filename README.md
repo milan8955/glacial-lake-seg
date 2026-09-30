@@ -6,7 +6,6 @@ A small, reproducible study on the global [Glacial-Lake-Bench](https://doi.org/1
 2. How much does a U-Net trained on 11 bands (optical + DEM + radar) add?
 3. Which inputs matter: does radar help under clouds, and does terrain help with shadows?
 
-This is Task 1 of my PhD preparation plan. It is the first step towards a volume-aware, multi-sensor glacial lake observatory for GLOF early warning in the Himalaya.
 
 ## Data
 
