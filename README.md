@@ -58,7 +58,7 @@ What I take from this:
 1. **Check the data before trusting a ready-made index.** The supplied NDWI band barely separates lakes from their surroundings (median 0.56 on lakes vs 0.62 elsewhere, because every band is stretched 0–1 per chip). Recomputing NDWI from the Green and NIR bands fixes most of this.
 2. **Deep learning clearly beats simple rules,** by nearly double the lake IoU on the global test set.
 3. **Radar and terrain matter most where mapping is hardest.** Adding Sentinel-1 and DEM bands lifts lake IoU only modestly across all regions (0.37 → 0.44) but more than triples it on the challenge set (0.11 → 0.36). Without terrain, the U-Net loses to the simple NDWI + slope rule on hard scenes.
-4. **The central–eastern Himalaya is the hardest region in the benchmark.** South Asia East (SA) has the lowest score of all 17 regions (two-class mIoU 0.64 with all bands, 0.51 with optical only). South Asia West sits near the average (0.73).
+4. **The central–eastern Himalaya was the hardest region for both U-Nets.** South Asia East (SA) has the lowest score of all 17 test regions (and of the 13 with at least 10 chips) (two-class mIoU 0.64 with all bands, 0.51 with optical only). South Asia West sits near the average (0.73).
 5. **Metric definitions matter.** "mIoU" in the paper averages lake and background IoU. The same model scores 0.44 on lake IoU but 0.71 on two-class mIoU. Re-weighting our test set to the paper's regional mix gives 0.725, against the paper's 0.82 with five times more training data and more than three times the epochs.
 
 ## Honest caveats
